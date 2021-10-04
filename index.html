@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.ico">
+    <title>Sekiro AI Mechanism Brainstorm Ver1.06</title>
+</head>
+<body>
+    <header>
+    	<div><h1>Improvment for Genichiro's AI Mechanism in Sekiro (Ver1.06)</h1></div>
+        <nav>
+        	 <ul>
+                    <li><a href="#CurrPro">Current Problem</a></li>
+                    <li><a href="#ImprovedS">Possible Improvement Strategies</a></li>
+                    <li><a href="#UnderO">Problems Under Observation</a></li>
+             </ul>
+        </nav>
+        <div><h3>Meeting Form: <em>Online & Brainstorm</em></h3></div>
+        <div><h3>Meeting Time: <i>10/3/2021</i></h3></div>
+    </header>
+    <main>
+    <div><h2>Attendance List</h2></div>
+            <ol>
+                <li><a href="https://taoboliao.github.io/">Will Liao</a></li>
+                <li>Hidetaka Miyazaki</li>
+                <li>Sekiro</li>
+                <li>Ashina Genichiro</li>
+                <li>Ashina Isshin</li>
+            </ol>
+            <hr>
+            <section>
+                <h1 id = "CurrPro">Current Problem</h1>
+                <p>Genichiro will never attack back if the player keep attacking when not facing him.</p>
+                <div>
+                	<video controls width = "720" src="./media/Genichiro.mp4"></video>
+                </div>
+                <p>Here is the BGM during the boss fight.</p>
+                <figure>
+                    <audio controls src = "./media/BGM.mp3">hola<code>guten tag</code></audio>
+                </figure>
+            </section>
+            <section>
+                <h1 id = "ImprovedS">Possible Improvement Strategies</h1>
+                <ol>
+                    <li>Fix the <b>attacking logic</b> for Genichiro.</li>
+                    <li>Design a <strong>direction recognition</strong> system for Genichiro.</li>
+                    <li>Modify the model of Ganichiro so that he can no longer be stucked behind the door.</li>
+                    <li>Decrease the backswing for Genichiro after taking damage.</li>
+                </ol>
+            </section>
+            <section>
+            	<span>
+            	<h1 id = "UnderO">Problems Under Observation</h1>
+                <p>1. There is no time for players to use props between stage 1 and stage 2.<br>2. Genichiro will always use the same attacking strategy after detecting the usage of props in stage 3.</p>
+                </span>
+            </section>
+            <details>
+            	<summary>Other bosses we might consider in future.</summary>
+                <ol>
+                    <li><input type = "checkbox" />Owl (Father)</li>
+                    <li><input type = "checkbox" />Ashina Isshin</li>
+                    <li><input type = "checkbox" />Headless</li>
+                </ol>
+            </details>
+             <hr>
+    </main>
+    <form>
+            <h2>We'd like to hear your voice</h2>
+            <fieldset>
+                <legend>Which improvement plan you like best?</legend>
+                <input type = "radio" id = "1" name = "logic">
+                <label for = "1">Fix the <b>attacking logic</b> for Genichiro?</label>
+                <br/>
+                <input type = "radio" id = "2" name = "reco">
+                <label for = "2">Design a <strong>direction recognition</strong> system for Genichiro?</label>
+                <br/>
+                <input type = "radio" id = "3" name = "model">
+                <label for = "3">Modify the model of Ganichiro so that he can no longer be stucked behind the door?</label>
+                <br/>
+                <input type = "radio" id = "4" name = "backsg">
+                <label for = "4">Decrease the backswing for Genichiro after taking damage?</label>
+                <br/>
+            </fieldset>
+            <br>
+
+            <label for = "improvement">Do you have any other suggestions?</label>
+            <br>
+            <textarea id = "improvement" name = "improvement" rows = "10" cols = "90">
+            </textarea>
+            <br>
+
+            <label for = "Rate">How satisfied you are during/after the boss fight with Genichiro? </label>
+            <input list = "rate" id = "feeling" name = "feeling" />
+            <datalist id = "rate">
+                <option value = "1"></option>
+                <option value = "2"></option>
+                <option value = "3"></option>
+                <option value = "4"></option>
+                <option value = "5"></option>
+            </datalist>
+            <br>
+           
+            <label for = "time">How long did you take for the Genichiro boss fight?</label>
+            <select name = "prog" id = "time">
+            <option value = "">--Please select your time range--</option>
+            <option value = "0-1">less than 1 hour</option>
+            <option value = "2-3">2 to 3 hours.</option>
+            <option value = "3-5">3 to 5 hours</option>
+            <option value = "5-">more than 5 hours</option>
+            </select>
+        </form>
+        <footer>
+                <button>Our official website</button>
+            <br>
+        </footer>
+        <div>
+            <img width = "250" src = "./media/GenichiroImg.jpg">
+        </div>
+</body>
+</html>
