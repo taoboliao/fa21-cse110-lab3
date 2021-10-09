@@ -1,0 +1,88 @@
+@media only screen and (max-width: 1920px) {
+    body {
+        background-color: gray;
+    }
+}
+/* Color & font-size changing. */
+header div h3 {
+    display: inline;
+    color: red;
+    font-size: 1.6ex;
+}
+header nav ul li{
+    display: grid;
+    grid-template-rows: auto;
+}
+.grid label{
+    color: palegoldenrod;
+}
+header div h1 {
+    height: 1em;
+    width: 35em;
+    font-size: 1.7em;
+}
+main > div h2 {
+    color : hsl(4, 86%, 71%);
+    text-decoration: underline;
+    text-align: center;
+}
+main ol li {
+    font-size: 1rem;
+}
+main section [id=UnderO] {
+    display: flex;
+    flex-grow: 3;
+    font-size: 30px;
+}
+main section #ImprovedS {
+    display: grid;
+    grid-template-columns: minmax(100px, 7fr) 3fr;
+    font-size: 20pt;
+    position: static;
+}
+main section #CurrPro {
+    font-size: 1.7pc;
+    position: relative;
+    max-width: 10em;
+    max-height: 2em;
+}
+/* Box of list */
+main ol{
+    display: block;
+    margin: .5em .5em;
+    margin-left: .5em;
+    border: 2px solid blue;
+    border-style: dotted;
+    padding: .5em 0em;
+    padding-bottom: .5em;
+    padding-left: 2em;
+}
+button:hover {
+  color: blue;
+}
+button:active{
+    color: white;
+}
+form datalist, textarea{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+*{
+    font-weight: 10em;
+}
+.grid > select{
+    font-size: 2em;
+}
+main section h1 ~ ol{
+    color: royalblue;
+}
+main section h1 + p{
+    background-color: lightyellow;
+}
+header nav ul li.grid {
+    grid-auto-flow: row;
+}
+p {
+    font-size: medium;
+}
